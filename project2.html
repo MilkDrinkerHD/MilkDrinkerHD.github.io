@@ -35,7 +35,25 @@
         <img src="images/slides.svg" alt="Thumbnail preview of the IT Jobs in 2040 slide deck" />
         <figcaption class="meta">Slide deck thumbnail. <a href="../Complete.pptx" download>Download the slides (PPTX)</a></figcaption>
       </figure>
-
+    <section aria-labelledby="embed-h">
+  <h2 id="embed-h">Embedded Deck</h2>
+  <div class="card">
+    <iframe id="pptx-frame" class="pptx-embed" title="IT Jobs in 2040 – embedded PowerPoint"></iframe>
+    <noscript>
+      <p>Enable JavaScript to view the embedded deck, or <a href="Complete.pptx">download the PPTX</a>.</p>
+    </noscript>
+    <p class="meta">If the embed doesn’t load, <a href="Complete.pptx">download the PPTX</a>.</p>
+  </div>
+</section>
+<script>
+(function(){
+  // Works for user sites (yourusername.github.io) and project sites (yourusername.github.io/repo)
+  var deckUrl = new URL('Complete.pptx', document.baseURI).href;
+  var src = 'https://view.officeapps.live.com/op/embed.aspx?src=' + encodeURIComponent(deckUrl);
+  var f = document.getElementById('pptx-frame');
+  if (f) f.src = src;
+})();
+</script>
       <section aria-labelledby="overview-h">
         <h2 id="overview-h">Overview</h2>
         <div class="card"><p>As technology evolves, so do the careers that support it. This presentation reviews changes from 2010–2025 and extrapolates to 2040, considering AI, cloud reliance, and automation.</p></div>
