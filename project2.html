@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project Two – Placeholder</title>
+  <meta name="description" content="Placeholder project page to be updated." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <header class="site-header" role="banner">
+    <div class="inner container">
+      <a class="site-title" href="index.html">
+        <img src="images/profile.svg" alt="Headshot placeholder" />
+        <span>Hugh Ronald</span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="index.html">Resume</a>
+        <a href="project1.html">Project: Border Run</a>
+        <a href="project2.html" aria-current="page">Project Two</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main" class="container" role="main">
+    <article>
+      <header>
+        <h1>Project Two</h1>
+        <p class="meta">Describe another class or personal project here.</p>
+      </header>
+      <section class="card">
+        <p>Replace this with a summary, tech stack, screenshots, and your role.</p>
+      </section>
+      <p><a href="index.html">← Back to resume</a></p>
+    </article>
+  </main>
+  <footer class="container" role="contentinfo">
+    <p>© <span id="year"></span> Hugh Ronald.</p>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+</html>
